@@ -11,5 +11,5 @@ sudo cp -R bin/* /bin
 
 
 
-sudo pacman -Sy viewnior git neovim vim qt5ct htop flameshot telegram-desktop firefox discord noto-fonts noto-fonts-compat noto-fonts-extra noto-fonts-cjk noto-fonts-emoji kitty xterm xfce4-terminal thunar pcmanfm lxappearance xfce4-power-manager pulseaudio pavucontrol redshift xfce4-clipman-plugin mpv tmux gvim
+sudo pacman -Sy viewnior git neovim vim qt5ct htop flameshot telegram-desktop firefox discord noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji kitty xterm xfce4-terminal thunar pcmanfm lxappearance xfce4-power-manager pulseaudio pavucontrol redshift xfce4-clipman-plugin mpv tmux gvim
 
