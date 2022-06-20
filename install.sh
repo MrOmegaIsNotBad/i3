@@ -3,13 +3,19 @@ cp -R .icons ~/
 cp -R .themes ~/
 cp -R .fonts ~/
 cp -R .vim ~/
-cp -R hide/.* ~/
+cp -R hide/* ~/
 
 sudo cp -R other/30-touchpad.conf /etc/X11/xorg.conf.d/
 
 sudo cp -R bin/* /bin
 
 echo "gtk-decoration-layout=menu:" >> ~/.config/gtk-3.0/settings.ini
+
+sudo echo "en_US.UTF-8 UTF-8
+ru_RU.UTF-8 UTF-8
+ua_UA.UTF-8 UTF-8
+"
+sudo localectl set-locale ru_RU.UTF-8
 
 sudo echo "export QT_QPA_PLATFORMTHEME=\"qt5ct\"
 export EDITOR=/usr/bin/vim
