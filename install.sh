@@ -23,7 +23,7 @@ sudo locale-gen
 sudo localectl set-locale ru_RU.UTF-8
 
 sudo pacman -Sy viewnior zsh imagemagick wget xclip ranger rxvt-unicode unicode-emoji unicode-cldr xautolock polkit-gnome git cmus gufw gparted blueman neovim vim qt5ct htop flameshot gimp telegram-desktop firefox discord noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji kitty pcmanfm lxappearance xfce4-power-manager pulseaudio pavucontrol redshift xfce4-clipman-plugin mpv tmux gvim
-
+sudo pacman -R xdg-desktop-portal-gnome
 sudo systemctl enable bluetooth
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
