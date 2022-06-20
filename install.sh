@@ -13,7 +13,7 @@ echo "gtk-decoration-layout=menu:" >> ~/.config/gtk-3.0/settings.ini
 
 sudo echo "en_US.UTF-8 UTF-8
 ru_RU.UTF-8 UTF-8
-ua_UA.UTF-8 UTF-8
+uk_UA.UTF-8 UTF-8
 "
 sudo locale-gen
 sudo localectl set-locale ru_RU.UTF-8
