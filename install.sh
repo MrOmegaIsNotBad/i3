@@ -5,7 +5,7 @@ cp -R .fonts ~/
 cp -R .vim ~/
 cp -R hide/* ~/
 
-mkdir Desktop Image Music Video Document
+mkdir Downloads Desktop Images Music Video Document
 
 sudo cp -R other/30-touchpad.conf /etc/X11/xorg.conf.d/
 
@@ -22,7 +22,7 @@ uk_UA.UTF-8 UTF-8
 sudo locale-gen
 sudo localectl set-locale ru_RU.UTF-8
 
-sudo pacman -Sy viewnior zsh imagemagick wget xautolock polkit-gnome git cmus gufw gparted blueman neovim vim qt5ct htop flameshot gimp telegram-desktop firefox discord noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji kitty xterm xfce4-terminal thunar pcmanfm lxappearance xfce4-power-manager pulseaudio pavucontrol redshift xfce4-clipman-plugin mpv tmux gvim
+sudo pacman -Sy viewnior zsh imagemagick wget rander xautolock polkit-gnome git cmus gufw gparted blueman neovim vim qt5ct htop flameshot gimp telegram-desktop firefox discord noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji kitty xterm xfce4-terminal thunar pcmanfm lxappearance xfce4-power-manager pulseaudio pavucontrol redshift xfce4-clipman-plugin mpv tmux gvim
 
 sudo systemctl enable bluetooth
 
