@@ -1,0 +1,2 @@
+#! /bin/sh
+xautolock -time 30 -locker lock

@@ -1,0 +1,25 @@
+# GIMP action-history
+
+(history-item "file-export" 1)
+(history-item "file-export-as" 1)
+(history-item "image-resize" 1)
+(history-item "filters-hue-chroma" 1)
+(history-item "edit-paste" 0)
+(history-item "filters-invert-perceptual" 0)
+(history-item "filters-invert-linear" 0)
+(history-item "filters-invert-value" 0)
+(history-item "filters-posterize" 0)
+(history-item "plug-in-hot" 0)
+(history-item "filters-color-balance" 0)
+(history-item "filters-color-temperature" 0)
+(history-item "filters-hue-saturation" 0)
+(history-item "file-quit" 0)
+(history-item "dialogs-preferences" 0)
+(history-item "layers-delete" 0)
+(history-item "filters-gaussian-blur" 0)
+(history-item "brushes-edit" 0)
+(history-item "brushes-duplicate" 0)
+(history-item "layers-duplicate" 0)
+(history-item "filters-colorize" 1)
+
+# end of action-history

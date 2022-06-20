@@ -9,9 +9,29 @@ sudo cp -R other/30-touchpad.conf /etc/X11/xorg.conf.d/
 
 sudo cp -R bin/* /bin
 
+echo "gtk-decoration-layout=menu:" >> ~/.config/gtk-3.0/settings.ini
 
+sudo echo "export QT_QPA_PLATFORMTHEME=\"qt5ct\"
+export EDITOR=/usr/bin/vim
+export GTK2_RC_FILES=\"$HOME/.gtkrc-2.0\"
+# fix \"xdg-open fork-bomb\" export your preferred browser from here
+export BROWSER=/usr/bin/librewolf
 
-sudo pacman -Sy viewnior wget git neovim vim qt5ct htop flameshot telegram-desktop firefox discord noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji kitty xterm xfce4-terminal thunar pcmanfm lxappearance xfce4-power-manager pulseaudio pavucontrol redshift xfce4-clipman-plugin mpv tmux gvim
+# Set our umask
+umask 02" >> /etc/profile
+
+echo "export QT_QPA_PLATFORMTHEME=\"qt5ct\"
+export EDITOR=/usr/bin/vim
+export GTK2_RC_FILES=\"$HOME/.gtkrc-2.0\"
+# fix \"xdg-open fork-bomb\" export your preferred browser from here
+export BROWSER=/usr/bin/librewolf
+
+# Set our umask
+umask 02" >> ~/.profile
+
+sudo pacman -Sy viewnior wget git cmus gufw gparted blueman neovim vim qt5ct htop flameshot gimp telegram-desktop firefox discord noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji kitty xterm xfce4-terminal thunar pcmanfm lxappearance xfce4-power-manager pulseaudio pavucontrol redshift xfce4-clipman-plugin mpv tmux gvim
+
+sudo systemctl enable bluetooth
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim

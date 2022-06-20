@@ -1,6 +1,3 @@
-name=whoami
-
-sudo git clone https://aur.archlinux.org/yay.git
-sudo chown -R  cloudcone:$name yay
+git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
