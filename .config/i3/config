@@ -333,7 +333,7 @@ bindsym $mod+m bar mode toggle
 client.background	$background
 
 client.focused          $unfocused	$foreground	$background $foreground $focused 
-client.unfocused        $background	$background $unfocused	$background	$focused
+client.unfocused        $background	$background $unfocused	$background	$unfocused
 client.focused_inactive $unfocused	$foreground	$background $unfocused	$unfocused
 client.urgent           $background	$background $unfocused	$background	$unfocused
 client.placeholder      $background	$background $unfocused	$background	$unfocused
