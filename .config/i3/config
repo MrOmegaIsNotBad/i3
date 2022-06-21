@@ -273,6 +273,7 @@ bindsym $mod+Ctrl+m exec pavucontrol
 # Colors set from ~/.Xresources
 set_from_resource $background	background
 set_from_resource	$foreground	foreground
+set_from_resource	$focused	focused
 set_from_resource	$unfocused	unfocused
 set_from_resource	$color0		color0
 set_from_resource 	$color1 	color1
@@ -290,7 +291,6 @@ set_from_resource	$color12	color12
 set_from_resource	$color13	color13
 set_from_resource	$color14	color14
 set_from_resource	$color15	color15
-
 # Polybar launch script (located ~/.config/polybar/launch.sh)
 #exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
@@ -310,16 +310,16 @@ bar {
 	strip_workspace_numbers yes
 
 	colors {
-		background #14161b
-		statusline #4badff
-		separator  #14161b
+		background $background
+		statusline $focused
+		separator  $background
 
 #                     border  backgr. text
-		focused_workspace  #4badff #4badff  #14161b
-		active_workspace   #4badff #14161b #4badff 
-		inactive_workspace #14161b #14161b #4badff
-		binding_mode       #4badff #14161b #4badff 
-		urgent_workspace   #4badff #14161b #4badff 
+		focused_workspace  $focused	   $focused    $background
+		active_workspace   $focused	   $background $focused
+		inactive_workspace $background $background $focused
+		binding_mode       $focused	   $background $focused
+		urgent_workspace   $focused    $background $focused
 	}
 }
 
@@ -330,13 +330,13 @@ bindsym $mod+m bar mode toggle
 # Theme colors
 # class                 border backgr. text indic. child_border
 # My colors
-client.background	#14161b
+client.background	$background
 
-client.focused          #2a2d38 #4badff #1B1D24 #4badff #4badff 
-client.unfocused        #1B1D24 #14161b #a8aeb1 #1B1D24 #363947
-client.focused_inactive #2a2d38 #4badff #1B1D24 #363947 #363947
-client.urgent           #1B1D24 #14161b #a8aeb1 #1B1D24 #363947
-client.placeholder      #1B1D24 #14161b #a8aeb1 #1B1D24 #363947
+client.focused          $unfocused	$foreground	$background $foreground $focused 
+client.unfocused        $background	$background $unfocused	$background	$focused
+client.focused_inactive $unfocused	$foreground	$background $unfocused	$unfocused
+client.urgent           $background	$background $unfocused	$background	$unfocused
+client.placeholder      $background	$background $unfocused	$background	$unfocused
 
 
 #############################
