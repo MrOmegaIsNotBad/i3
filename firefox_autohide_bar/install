@@ -1,0 +1,6 @@
+Go to your profile folder:
+
+    Linux: $HOME/.mozilla/firefox/######.default-release/
+    MacOS: Users/[USERNAME]/Library/Application Support/Firefox/Profiles/######.default-release
+    Windows: C:\Users\[USERNAME]\AppData\Roaming\Mozilla\Firefox\Profiles\######.default-release
+
