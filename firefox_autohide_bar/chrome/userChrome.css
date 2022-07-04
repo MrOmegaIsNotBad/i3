@@ -1,17 +1,9 @@
 #navigator-toolbox {
-  max-height: 5px;
-  overflow: hidden;
-  transition: ease all 2s;
+	margin-top: -32px;
+	transition: margin-top 0.5s;
 }
 
-#navigator-toolbox:hover {
-  max-height: 100vh;
-  animation: 0s pop-in;
-  animation-fill-mode: both;
-  animation-delay: 2s;
-}
-
-@keyframes pop-in {
-  from {overflow: hidden}
-  to {overflow: unset}
+#navigator-toolbox:hover, #navigator-toolbox:focus-within {
+	margin-top: 0px;
+	transition: margin-top 0.5s;
 }
