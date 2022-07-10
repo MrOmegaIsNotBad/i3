@@ -1,9 +1,9 @@
 #navigator-toolbox {
-	margin-top: -32px;
-	transition: margin-top 0.5s;
+	margin-top: -67px;
+	transition: margin-top 0.3s;
 }
 
 #navigator-toolbox:hover, #navigator-toolbox:focus-within {
 	margin-top: 0px;
-	transition: margin-top 0.5s;
+	transition: margin-top 0.3s;
 }
