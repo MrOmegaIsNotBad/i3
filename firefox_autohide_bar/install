@@ -4,3 +4,6 @@ Go to your profile folder:
     MacOS: Users/[USERNAME]/Library/Application Support/Firefox/Profiles/######.default-release
     Windows: C:\Users\[USERNAME]\AppData\Roaming\Mozilla\Firefox\Profiles\######.default-release
 
+and activate in about:config
+    toolkit.legacyUserProfileCustomizations.stylesheets
+
