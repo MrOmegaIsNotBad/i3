@@ -5,7 +5,7 @@ cp -R .fonts ~/
 cp -R .vim ~/
 cp -R hide/.* ~/
 
-mkdir Downloads Desktop Images Music Video Document
+mkdir ~/Downloads ~/Desktop ~/Images ~/Music ~/Video ~/Document
 
 sudo cp -R other/30-touchpad.conf /etc/X11/xorg.conf.d/
 
