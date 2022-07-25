@@ -3,7 +3,7 @@ cp -R .icons ~/
 cp -R .themes ~/
 cp -R .fonts ~/
 cp -R .vim ~/
-cp -R hide/* ~/
+cp -R hide/.* ~/
 
 mkdir Downloads Desktop Images Music Video Document
 
@@ -22,7 +22,7 @@ uk_UA.UTF-8 UTF-8
 sudo locale-gen
 sudo localectl set-locale ru_RU.UTF-8
 
-sudo pacman -Sy viewnior zsh imagemagick wget file-roller alsa-utils xclip ranger rxvt-unicode unicode-emoji unicode-cldr xautolock polkit-gnome git cmus gufw gparted blueman neovim vim qt5ct htop flameshot gimp telegram-desktop firefox discord noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji kitty pcmanfm lxappearance xfce4-power-manager pulseaudio pavucontrol redshift xfce4-clipman-plugin mpv tmux gvim
+sudo pacman -Sy viewnior i3lock volumeicon dunst picom zsh imagemagick wget file-roller alsa-utils xclip ranger rxvt-unicode unicode-emoji unicode-cldr xautolock polkit-gnome git cmus gufw gparted blueman neovim vim qt5ct htop flameshot gimp telegram-desktop firefox discord noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji kitty pcmanfm lxappearance xfce4-power-manager pulseaudio pavucontrol redshift xfce4-clipman-plugin mpv tmux gvim
 sudo pacman -R xdg-desktop-portal-gnome
 sudo systemctl enable bluetooth
 
